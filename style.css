@@ -43,6 +43,7 @@ header {
     justify-content: space-between;
     background: #E3E3E3;
     padding: 1px;
+    text-align: center;
 }
 
 .header-location, .header-updated {
@@ -105,6 +106,7 @@ table th {
 
 table th:first-child, td:first-child {
     text-align: left;
+    padding: 0 0 0 1px;
 }
 
 table tr:nth-child(2n+3) {
@@ -119,8 +121,17 @@ table tr:nth-child(2n+3) {
     .body {
         flex-flow: column-reverse nowrap;
     }
-    .game-list-release {
-        visibility: collapse;
-        width: 0;
+    header {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    table {
+        display: block;
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+    table th:not(:last-child), td:not(:last-child) {
+        border-right: 1px solid #E3E3E3;
+        padding: 0 1px 0 1px;
     }
 }
