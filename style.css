@@ -20,6 +20,14 @@ blockquote p {
     width: 100%;
 }
 
+hr {
+    width: 100%; /* For reasons I don't currently understand, HRs in a flexbox(?) get squished. */
+    margin: 0 .5rem .5rem .5rem;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #FFFFFF, #E3E3E3, #FFFFFF);
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: small;
