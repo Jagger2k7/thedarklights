@@ -121,6 +121,10 @@ table tr:nth-child(2n+3) {
     background: #F5F5F5;
 }
 
+table tr:hover {
+    background: #E3E3E3;
+}
+
 .game-list-links span:not(:last-child):after {
     content: " | "
 }
